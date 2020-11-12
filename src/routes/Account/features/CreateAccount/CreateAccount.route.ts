@@ -1,0 +1,12 @@
+import { lazy } from 'react';
+import { IRouteProps } from 'src/routes';
+
+const createAccountRoute: IRouteProps = {
+  path: '/create-account',
+  exact: true,
+  component: lazy(() => import('./CreateAccount')),
+  name: 'Create Account',
+  to: '/create-account',
+};
+
+export default createAccountRoute;
